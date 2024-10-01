@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Sign the contract</title>
+    <style>
+        body {
+            transition: background-color 1s ease;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">SEND</div>
+        <div class="nav-items">
+            <a href="#home">Home</a> <!-- Added link text -->
+            <a href="#about">About</a> <!-- Added link text -->
+            <a href="#contact">Contact</a> <!-- Added link text -->
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <section class="hero">
+            <div class="hero-container">
+                <!-- Left Column -->
+                <div class="column-left">
+                    <h1>Send limited messages DONUT</h1>
+                    <p><span><em>Sign the contract big boy, sign the contract</em></span>. Give me my money</p>
+                    <button>Ain't no p</button>
+                </div>
+                
+                <!-- Right Column -->
+                <div class="column-right">
+                    <img src="./img/Mike Tyson Sign The Contract Big Boy Green Screen.jfif" alt="Mike Tyson" class="hero-image">
+                </div>
+                
+                <!-- Centered Video Section -->
+                <div class="center">
+                    <video src="./vid/Sign the Contract, Big Boy.mp4" controls></video>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Background Color Changing Script -->
+    <script>
+        // Function to generate a random color
+        function getRandomColor() {
+            const letters = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+    
+        // Function to change the background color every second
+        setInterval(() => {
+            document.body.style.backgroundColor = getRandomColor();
+        }, 1000);
+    </script>
+</body>
+</html>
